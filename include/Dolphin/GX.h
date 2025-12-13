@@ -15,7 +15,7 @@
 extern "C" {
 #endif /* __cplusplus */
 
-extern WGPipe wgPipe;
+extern WGPipe volatile wgPipe;
 
 #define GX_LOAD_BP_REG(x)                                                                          \
     do {                                                                                           \
