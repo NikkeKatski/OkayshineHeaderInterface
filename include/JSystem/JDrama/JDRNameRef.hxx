@@ -16,8 +16,9 @@ namespace JDrama {
         virtual void loadAfter();
         virtual TNameRef *searchF(u16, const char *);
 
-        TNameRef *genObject(JSUMemoryInputStream &stream, JSUMemoryInputStream &);
-        u32 getType(JSUMemoryInputStream &stream, JSUMemoryInputStream &);
+        static TNameRef *genObject(JSUMemoryInputStream &stream, JSUMemoryInputStream &);
+        static u32 getType(JSUMemoryInputStream &stream, JSUMemoryInputStream &);
+
         TNameRef *search(const char *);
 
         static u16 calcKeyCode(const char *);
