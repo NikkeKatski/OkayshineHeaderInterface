@@ -1215,12 +1215,8 @@ public:
     f32 _2BC;
     TLiveActor *mPriorityCollisionOwner;
     Mtx _2C4;
-    f32 _2F4;
-    f32 _2F8;
-    f32 _2FC;
-    f32 _300;
-    f32 _304;
-    f32 _308;
+    TVec3f _2F4;
+    TVec3f _300;
     f32 _30C;
     u32 _310;
     f32 _314;
