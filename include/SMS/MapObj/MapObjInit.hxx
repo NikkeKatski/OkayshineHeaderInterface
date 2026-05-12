@@ -56,7 +56,7 @@ struct hit_data {
 struct obj_hit_info {
     u32 _00;
     u32 mType;
-    u32 _08;
+    f32 mVisualOfsY;
     hit_data *mHitData;
 };
 
