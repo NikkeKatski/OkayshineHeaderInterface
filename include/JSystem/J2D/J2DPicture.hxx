@@ -35,10 +35,10 @@ public:
         setBlendKonstAlpha();
     }
     J2DPicture(J2DPane *, JSURandomInputStream *, bool);
-    virtual ~J2DPicture();
+    ~J2DPicture() override;
 
-    virtual void drawSelf(int, int);
-    virtual void drawSelf(int, int, Mtx *);
+    void drawSelf(int, int) override;
+    void drawSelf(int, int, Mtx *) override;
 
     void changeTexture(const ResTIMG *timg, u8);
     void drawFullSet(int x, int y, int w, int h, J2DBinding binding, u32, bool, J2DWrapMode wrapH,

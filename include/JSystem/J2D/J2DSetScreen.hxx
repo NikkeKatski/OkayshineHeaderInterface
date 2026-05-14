@@ -8,5 +8,5 @@ class J2DSetScreen : public J2DScreen {
 public:
     inline J2DSetScreen() : J2DScreen() {}
     J2DSetScreen(const char *, JKRArchive *);
-    virtual ~J2DSetScreen();
+    ~J2DSetScreen() override;
 };

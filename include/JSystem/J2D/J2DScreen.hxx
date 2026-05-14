@@ -9,10 +9,10 @@ public:
     inline J2DScreen() : J2DPane(), mOverlayColor({0, 0, 0, 0}) {}
     inline J2DScreen(u16 id, u32 magic, const JUTRect &rect)
         : J2DPane(id, magic, rect), mOverlayColor({0, 0, 0, 0}) {}
-    virtual ~J2DScreen();
+    ~J2DScreen() override;
 
-    virtual void drawSelf(int, int, Mtx *);
-    virtual J2DPane *search(u32 id);
+    void drawSelf(int, int, Mtx *) override;
+    J2DPane *search(u32 id) override;
 
     void makeHiearachyPanes(J2DPane *, JSURandomInputStream *, bool, bool, bool, s32 *);
     u32 makeUserPane(s16, J2DPane *, JSURandomInputStream *);
