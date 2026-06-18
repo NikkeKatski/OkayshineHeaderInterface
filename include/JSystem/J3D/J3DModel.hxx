@@ -111,7 +111,8 @@ public:
     J3DSkinDeform *mSkinDeform;
     u32 _90;
     u32 _94;
-    J3DVertexBuffer mVtxBuffer;
+    J3DVertexBuffer *mVtxBuffer;
+    u32 _9C;
 };
 
 class J3DModelHierarchy {};

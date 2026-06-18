@@ -1131,7 +1131,7 @@ public:
         u32 _01                   : 5;
         bool mLeftRecentWater     : 1;
         bool mTalkingNPC          : 1;
-        bool mIsVisible           : 1;
+        bool mIsInvisible         : 1;
         bool mAboveSewerFloor     : 1;
         u32 _00                   : 1;
     } mAttributes;  // 0x0118
@@ -1152,7 +1152,7 @@ public:
         u32 _01                   : 5;
         bool mLeftRecentWater     : 1;
         bool mTalkingNPC          : 1;
-        bool mIsVisible           : 1;
+        bool mIsInvisible         : 1;
         bool mAboveSewerFloor     : 1;
         u32 _00                   : 1;
     } mPrevAttributes;  // 0x011C
